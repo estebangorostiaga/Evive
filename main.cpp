@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
    std::string dishes;
    std::ifstream myfile (argv[1]);
 
-   // If multiple commands, the meal_name and dishes variables can be turned into an arrays of strings
+   // If multiple commands, the meal_name and dishes variables can be turned to arrays of strings
    if (myfile)
    {
       while (myfile)
