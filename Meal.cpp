@@ -28,6 +28,7 @@ void Meal::getDishes(std::string command){
     }
 }
 
+// This function is just used to make sure that the derived class's function is used
 void Meal::getOutput(){
     std::cout << "Just a normal Meal" << std::endl;
 }

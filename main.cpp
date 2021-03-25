@@ -6,14 +6,12 @@
 
 int main(int argc, char *argv[]) {
 
-   // Meals like Snacks can also be created (instead of just Breakfast, Lunch, Dinner)
-   // More meal variables can be added here (meal2,meal3...)
-
+   // Step 1. Opening the Tests Folder and getting the Meal Name and the Dishes
    std::string meal_name;
    std::string dishes;
    std::ifstream myfile (argv[1]);
 
-   // If multiple commands, the meal_name and dishes variables can be turned into a arrays of strings
+   // If multiple commands, the meal_name and dishes variables can be turned into an arrays of strings
    if (myfile)
    {
       while (myfile)
@@ -23,7 +21,9 @@ int main(int argc, char *argv[]) {
       myfile.close();
   }
 
-   // Looks for the Dishes and Sorts the Output for Each Meal
+   // Step 2. Looks for the Dishes and Sorts the Output for Each Meal
+       // Meals like Snacks can also be created (instead of just Breakfast, Lunch, Dinner)
+       // More meal variables can be added here (meal2,meal3...)
    if(dishes.empty())
    {
       if(meal_name == "Dinner")
@@ -37,7 +37,6 @@ int main(int argc, char *argv[]) {
       if(meal_name == "Breakfast")
       {
          Breakfast* meal1 = new Breakfast();
-         //std::string word1 = argv[2];
          meal1->getDishes(dishes);
          meal1->getOutput();  
       }
@@ -45,14 +44,12 @@ int main(int argc, char *argv[]) {
       else if (meal_name == "Lunch")
       {
          Lunch* meal1 = new Lunch();
-         //std::string word1 = argv[2];
          meal1->getDishes(dishes);
          meal1->getOutput();  
       }
       else
       {
          Dinner* meal1 = new Dinner();
-         //std::string word1 = argv[2];
          meal1->getDishes(dishes);
          meal1->getOutput();  
       }
