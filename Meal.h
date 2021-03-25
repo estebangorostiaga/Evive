@@ -1,10 +1,12 @@
 #ifndef MEAL_H_
 #define MEAL_H_
 #include <iostream>
+#include <fstream>
+#include <string>
 #include <string>
 #include <sstream>
 #include <vector>
-
+using namespace std;
 class Meal{
 public:
    Meal( );
