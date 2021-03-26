@@ -1,6 +1,6 @@
 # Evive
 
-This is my solution to the Evive Engineering Test in C++. You may not use this code if you intend to pass as it your own.
+This is my solution to the Evive Engineering Test in C++. You may not use this code if you intend to pass it as your own.
 
 # How to Test the code
 
